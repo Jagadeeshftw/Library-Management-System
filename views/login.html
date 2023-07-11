@@ -9,6 +9,7 @@
     <meta name="author" content="Swetabh Suman">
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="../public/login.css">
+    <script src="index.js" defer></script>
     <title>log in</title>
 </head>
 
@@ -23,9 +24,9 @@
     </section>
     <div class="container">
 
-        <form class="form-signin">
+        <form action="/validation" class="form-signin" method ="POST">
             <h2 class="form-signin-heading" align:center>Log in</h2>
-            <input type="text" class="form-control" placeholder="Email address" required autofocus>
+            <input type="text" class="form-control" title="email" placeholder="Email address" required autofocus>
             <input type="password" class="form-control" placeholder="Password" required><br>
             <a href="forget.html">Forget password?</a>
             <button class="btn btn-lg btn-primary btn-block" type="submit">log in</button>
